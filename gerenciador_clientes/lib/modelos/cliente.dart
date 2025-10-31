@@ -45,7 +45,7 @@ return true; //cadastrouuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
       //é uma funcao anonima
       // o c representa cadaelemento(cada cliente) da lista _clientes
       (c) => c.email.toLowerCase() == email.toLowerCase() && c.senha == senha,
-      orElse: () => null,  //retorna nulo se nao encontrar os dados
+      orElse: () => Null as Cliente,  //retorna nulo se nao encontrar os dados
     );
   }
 }
